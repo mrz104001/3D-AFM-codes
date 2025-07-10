@@ -17,6 +17,17 @@ The raw data is recorded as 4 data sets of amplitude(r), phase(phase), height(au
    Used for quick examine of the 3D matrices during and after the processing.
 
 
+## helper functions:
+4. double_expand.m
+	Use double exponential to fit the amplitude and phase to larger height regions, used in force_cal_extended to calculate full range energy and force matrix.
+5. find_period_max_fun_3D_cut.m
+	Use sine wave fit to determine the x-scan period, used to help group the raw data into NxN cell variable.
+6. force_cal_extended.m
+	Used to calculate the full range energy and force matrix, since the amplitude and phase is expanded to longer range, data longer than the length of data obtained from force_cal.m is only considered for demonstration purpose.
+7. force_cal.m
+	Use Holsher method to calculate energy and force matrix.
+
+
 ## Instruction and reminder:
-1. Grouping of the data might result in error of dividing between x-y point groups. For example, a supposed 50x50 x-y pixel 3D data, might give 49 or 51 data spectra in each x line while it is supposed to give 50. In this case, manual adjustment of the grouping is needed and the code is given in main code 1 and 2, which need to be used with caution.
+1. Grouping of the data might result in error of dividing between x-y point groups. For example, a supposed 50x50 x-y pixel 3D data, might give 49 or 51 data spectra in each x line while it is supposed to give 50. In this case, manual adjustment of the grouping is needed and the code is given in main code 1 (line 315-377) and 2 (line 313-372), which need to be used with caution.
 2. Raw data from lock-in is given at URL: XXX, with the processed data file also available as reference and processing start for the next step.
