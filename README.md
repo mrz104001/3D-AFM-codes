@@ -1,6 +1,6 @@
 # 3D-AFM-codes
-## The uploads of codes and raw data is still underway, if anything is wrong, please contact us.
-This is a workflow to construct process the 3D-AFM raw data, do 3D-AFM averaging and plot the figures. The codes are developed in BIO-AFM-LAB at Weill Cornell Medicine under the supervision of Professor Simon Scheuring.
+## Primitive version of the code and raw data has been uploaded. Please contact us if anything is unclear.
+This is a workflow to process the 3D-AFM raw data, do 3D-AFM averaging and plot the figures. The codes are developed in BIO-AFM-LAB at Weill Cornell Medicine under the supervision of Professor Simon Scheuring.
 
 Developer: Runze Ma, Yining Jiang
 
