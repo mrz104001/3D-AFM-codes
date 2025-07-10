@@ -18,3 +18,7 @@ This folder contains all the IgorPro scripts to display 3D matrix saved as tif/t
 3. Click 3D Plot/Gizmo for 3d afm 2, then click OK on the popped up Function Execution Error window.
 4. Use the load button in the Gizmo 3D control panel to load a 3D data tif/tiff file and you can adjust the displayed slices.
 5. A moving slice movie can also be generated via the movie button. More options are also given next to the button.
+
+
+## Raw data
+The raw data of the 3D-AFM measurement on mica and AqpZ can be found at: https://doi.org/10.5281/zenodo.15856517. 1.3 and 2.3 are the tiff file that can be displayed in the main code here. They are also the dataset displayed in Figure 1 and Figure 2.

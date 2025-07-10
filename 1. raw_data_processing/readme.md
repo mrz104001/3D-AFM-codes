@@ -8,7 +8,7 @@ The raw data is recorded as 4 data sets of amplitude(r), phase(phase), height(au
 4. Using Holsher's method, numerical integral and differential were deployed to get the force and energy matrices from amplitude, phase and height.
 
 
-## main codes:
+## Main codes:
 1. force_curve_3D_5_channels_stepZ_for_missing_lines.m
    Used for subtracting the trace scan data of 3D AFM, and calculated the corresponding force and energy curves.
 2. force_curve_3D_5_channels_stepZ_for_missing_lines_retrace
@@ -17,7 +17,7 @@ The raw data is recorded as 4 data sets of amplitude(r), phase(phase), height(au
    Used for quick examine of the 3D matrices during and after the processing.
 
 
-## helper functions:
+## Helper functions:
 4. double_expand.m
 	Use double exponential to fit the amplitude and phase to larger height regions, used in force_cal_extended to calculate full range energy and force matrix.
 5. find_period_max_fun_3D_cut.m
@@ -31,3 +31,7 @@ The raw data is recorded as 4 data sets of amplitude(r), phase(phase), height(au
 ## Instruction and reminder:
 1. Grouping of the data might result in error of dividing between x-y point groups. For example, a supposed 50x50 x-y pixel 3D data, might give 49 or 51 data spectra in each x line while it is supposed to give 50. In this case, manual adjustment of the grouping is needed and the code is given in main code 1 (line 315-377) and 2 (line 313-372), which need to be used with caution.
 2. Raw data from lock-in is given at URL: XXX, with the processed data file also available as reference and processing start for the next step.
+
+
+## Raw data.
+The raw data of the 3D-AFM measurement on mica and AqpZ can be found at: https://doi.org/10.5281/zenodo.15856517. 1.1 and 2.1 can be directly input into the main codes, 1.2 and 2.2 are the processed results.
