@@ -75,5 +75,5 @@ Still constructing...
 5. A moving slice movie can also be generated via the movie button. More options are also given next to the button.
 
 
-## Demo (Test data)
-The raw data for testing the raw_data_processing will be deposited here: https://doi.org/10.5281/zenodo.15856517.
+## Raw data
+The raw data for all the codes here are deposited here: https://doi.org/10.5281/zenodo.15856517. Please refer to the readme file in each subfolder for detailed description.
