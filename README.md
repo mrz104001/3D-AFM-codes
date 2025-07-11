@@ -1,5 +1,5 @@
 # 3D-AFM-codes
-## Primitive version of the code and raw data has been uploaded. Please contact us if anything is unclear.
+### Primitive version of the code and raw data has been uploaded. Please contact us if anything is unclear.
 This is a workflow to process the 3D-AFM raw data, do 3D-AFM averaging and plot the figures. The codes are developed in BIO-AFM-LAB at Weill Cornell Medicine under the supervision of Professor Simon Scheuring.
 
 Developer: Runze Ma, Yining Jiang
@@ -60,7 +60,7 @@ Note: These codes are developed to process the raw data saved from 3D-AFM setup.
 	Use the drift information from code 1 to establish the x-y coordiantes relation before and after the drift correction.
 3. energy_background_v3.m
 	Use double exponential function to remove long-range energy background from the curves.
-## Instructions:
+#### Instructions:
 1. Use the lowest point mapping(LPM) data to locate the center of mass of each AqpZ in the lattice. The data structure of the input is: lpmap_pp=[x1,y1;x2,y2;x3,y3;...], x-y coordiante of center of mass of each protein (in pixel), lpmap_np=[N1,N2;N2,N3;...],  neighboring situation of all the recorded center of mass in lpmap_pp, with N1,N2 being the neighboring centers, N starts from 0 in lpmap_pp. This step could be done by manually choosing the center or using cross-correlation method. An custom ImageJ plugin was used to locate the center of mass of AqpZ in the main text, which could be given upon reasonable request. An example coordinate was also given in the matlab codes to test the raw data.
 2. For the section of "drift correction", initial guesses must be given for the calculation of drift constant.
 3. For the section of "particle determination", default settings were given for the analysis of AqpZ. In these parameters, parsize is the radius of data with respect to the center of mass of each AqpZ, which would be considered into later calculation, res_tgt is the resolution of the sparse matrix for the data to be put into.
@@ -75,10 +75,10 @@ Note: These codes are developed to process the raw data saved from 3D-AFM setup.
 	Use numerical differential to calculate the force from energy matrix.
 3. force_adjustment_v1.m
 	Restore the values of the matrix to real value since the kernel application step actually decrease the value by spreading the value of the point to the volume of the kernel.
-## Helper function.
+#### Helper function.
 1. make_3D_LAFM_kernel1a.m
 	Generate a kernel to be used in the main code 1.
-## Instructions.
+#### Instructions.
 1. Run "volume_construction_essemble_v3_AqpZ.m" first, it needs the input of the structure data set from pre-processing. The parameters of the first section is the default used in the main text.
 2. The result of "volume_construction_essemble_v3_AqpZ.m" will be saved at the end of the script, the filename of which needs to be input into "force_calculation_v1.m" for the continue processing.
 3. Lastly, run "force_adjustment_v1.m", no extra input is needed. "ppvolumeF3" will be the final result of 3D-AFM averaged data.
