@@ -19,7 +19,7 @@ NOTE: Any usage of the codes should cite the publication mentioned above.
 ## Installation instructions: 
 1. The codes require installation of MATLAB (MathWorks) 2024b. An installation guide can be found at: https://www.mathworks.com/help/install/.
 2. IgorPro is recommended for 3D volume demonstration purpose. An installation guide can be found at: https://www.wavemetrics.com/.
-3. MIJI is recommended (not required) for visualizing data. An installation guide can be found at: https://www.mathworks.com/matlabcentral/fileexchange/47545-mij-running-imagej-and-fiji-within-matlab. If MIJI is not installed, user should comment out any code that uses MIJI for visualization (lines starting sith "MIJ.xxx").
+3. MIJI is recommended (not required) for visualizing data. An installation guide can be found at: https://www.mathworks.com/matlabcentral/fileexchange/47545-mij-running-imagej-and-fiji-within-matlab. Lines starting sith "MIJ.xxx" will call MIJI plugin but it is isolated in try catch sentence in MATLAB codes, only giving a reminder in the command window "No MIJ plugin detected, optional plotting skipped." It can be ignored if you choose not to install MIJI.
 4. The installation should take less than one hour on a "normal" desktop computer.
 
 ## General instructions:
