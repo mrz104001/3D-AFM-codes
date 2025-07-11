@@ -12,7 +12,7 @@ Only run the main code and the main code must be run section by section!
 ## Main codes:
 1. force_curve_3D_5_channels_stepZ_for_missing_lines.m<br/>
    Used for subtracting the trace scan data of 3D AFM, and calculated the corresponding force and energy curves.
-2. force_curve_3D_5_channels_stepZ_for_missing_lines_retrace<br/>
+2. force_curve_3D_5_channels_stepZ_for_missing_lines_retrace.m<br/>
    Used for subtracting the retrace scan data of 3D AFM, and calculated the corresponding force and energy curves.
 3. display_3D_curve_all.mlapp<br/>
    Used for quick examine of the 3D matrices during and after the processing.
