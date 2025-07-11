@@ -570,11 +570,15 @@ end
     catch
     end
 
-    javaaddpath 'C:\Program Files\MATLAB\R2023b\java\mij.jar'
-    javaaddpath 'C:\imaging software\ImageJ\ij.jar'
+    try
+        javaaddpath 'C:\Program Files\MATLAB\R2023b\java\mij.jar'
+        javaaddpath 'C:\imaging software\ImageJ\ij.jar'
 
-    MIJ.start();
-    MIJ.createImage(ind_min);
+        MIJ.start();
+        MIJ.createImage(ind_min);
+    catch
+        disp('No MIJ plugin detected, optional plotting skipped.');
+    end
 
 
     disp('The z drift has been calculated, applying to the raw data.');

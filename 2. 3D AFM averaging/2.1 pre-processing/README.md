@@ -6,11 +6,11 @@ This folder contains all MATLAB code to do a drift correction on the 3D-AFM meas
 
 
 ## Helper functions:
-1. drift_determination_v1.m<br/>
+2. drift_determination_v1.m<br/>
 	Determine the drift constant based on the center of mass of the AqpZ.
-2. particle_determination_v2b.m<br/>
+3. particle_determination_v2b.m<br/>
 	Use the drift information from code 1 to establish the x-y coordiantes relation before and after the drift correction.
-3. energy_background_v3.m<br/>
+4. energy_background_v3.m<br/>
 	Use double exponential function to remove long-range energy background from the curves.
 
 

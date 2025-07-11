@@ -10,7 +10,7 @@ This folder contains all MATLAB code to combine 3D-AFM measurements above multip
 
 
 ## Helper function.
-1. make_3D_LAFM_kernel1a.m<br/>
+4. make_3D_LAFM_kernel1a.m<br/>
 	Generate a kernel to be used in the main code 1.
 
 

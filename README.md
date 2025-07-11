@@ -54,11 +54,11 @@ Note: These codes are developed to process the raw data saved from 3D-AFM setup.
 1. main_script_v1_AqpZ.m<br/>
 	Based on the lowest point mapping(LPM) data, it calculates the drift constant and apply it to the energy matrix for later density construction.
 #### Helper functions:
-1. drift_determination_v1.m<br/>
+2. drift_determination_v1.m<br/>
 	Determine the drift constant based on the center of mass of the AqpZ.
-2. particle_determination_v2b.m<br/>
+3. particle_determination_v2b.m<br/>
 	Use the drift information from code 1 to establish the x-y coordiantes relation before and after the drift correction.
-3. energy_background_v3.m<br/>
+4. energy_background_v3.m<br/>
 	Use double exponential function to remove long-range energy background from the curves.
 #### Instructions:
 1. Use the lowest point mapping(LPM) data to locate the center of mass of each AqpZ in the lattice. The data structure of the input is: lpmap_pp=[x1,y1;x2,y2;x3,y3;...], x-y coordiante of center of mass of each protein (in pixel), lpmap_np=[N1,N2;N2,N3;...],  neighboring situation of all the recorded center of mass in lpmap_pp, with N1,N2 being the neighboring centers, N starts from 0 in lpmap_pp. This step could be done by manually choosing the center or using cross-correlation method. An custom ImageJ plugin was used to locate the center of mass of AqpZ in the main text, which could be given upon reasonable request. An example coordinate was also given in the matlab codes to test the raw data.
@@ -76,7 +76,7 @@ Note: These codes are developed to process the raw data saved from 3D-AFM setup.
 3. force_adjustment_v1.m<br/>
 	Restore the values of the matrix to real value since the kernel application step actually decrease the value by spreading the value of the point to the volume of the kernel.
 #### Helper function:
-1. make_3D_LAFM_kernel1a.m<br/>
+4. make_3D_LAFM_kernel1a.m<br/>
 	Generate a kernel to be used in the main code 1.
 #### Instructions:
 1. Run "volume_construction_essemble_v3_AqpZ.m" first, it needs the input of the structure data set from pre-processing. The parameters of the first section is the default used in the main text.
@@ -92,7 +92,9 @@ Note: These codes are developed to process the raw data saved from 3D-AFM setup.
 2. figure_2_image_rotate.m<br/>
 	This is to rotate the 3D force data so that we can have a cross section that goes through the center of AqpZ in the 2d lattice.
 3. figure_3_slices.m<br/>
-	This involves rotating and cutting the 3D AFM average data to get slices 
+	This involves rotating and cutting the 3D AFM average data, to get vertical and horizontal slices.
+4. Figure_4_MD_simulation.m<br/>
+	This loads the MD simulation data, and cut the same cross section as in figure_3_slices.m
 
 ### 3.2 IgorPro 3D volume demonstration
 #### Main codes:
