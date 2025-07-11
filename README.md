@@ -12,7 +12,7 @@ NOTE: Any usage of the codes should cite the publication mentioned above.
 
 ## System requirements:
 1. Operating system for code development : Windows 10
-2. Software for code development: MATLAB (MathWorks) 2024b, ImageJ, IgorPro 9.05 (optional, for 3D volume demonstration, e.g. supplementary video 1 and 2)
+2. Software for code development: MATLAB (MathWorks) 2024b, IgorPro 9.05 (optional, for 3D volume demonstration, e.g. supplementary video 1 and 2)
 3. Additional add-ons: MIJI
 4. Non-standard hardware: N/A
 
