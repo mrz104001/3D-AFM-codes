@@ -1,16 +1,16 @@
 This folder contains all MATLAB code to do a drift correction on the 3D-AFM measurement based on lowest point mapping. Only run the main code and the main code must be run section by section.
 
 ## Main codes:
-1. main_script_v1_AqpZ.m
+1. main_script_v1_AqpZ.m<br/>
 	Based on the lowest point mapping(LPM) data, it calculates the drift constant and apply it to the energy matrix for later density construction.
 
 
 ## Helper functions:
-1. drift_determination_v1.m
+1. drift_determination_v1.m<br/>
 	Determine the drift constant based on the center of mass of the AqpZ.
-2. particle_determination_v2b.m
+2. particle_determination_v2b.m<br/>
 	Use the drift information from code 1 to establish the x-y coordiantes relation before and after the drift correction.
-3. energy_background_v3.m
+3. energy_background_v3.m<br/>
 	Use double exponential function to remove long-range energy background from the curves.
 
 
