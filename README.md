@@ -1,5 +1,5 @@
 # 3D-AFM-codes
-### Primitive version of the code and raw data has been uploaded. Please contact us if anything is unclear.
+#### Primitive version of the code and raw data has been uploaded. Please contact us if anything is unclear.
 This is a workflow to process the 3D-AFM raw data, do 3D-AFM averaging and plot the figures. The codes are developed in BIO-AFM-LAB at Weill Cornell Medicine under the supervision of Professor Simon Scheuring.
 
 Developer: Runze Ma, Yining Jiang
@@ -75,10 +75,10 @@ Note: These codes are developed to process the raw data saved from 3D-AFM setup.
 	Use numerical differential to calculate the force from energy matrix.
 3. force_adjustment_v1.m
 	Restore the values of the matrix to real value since the kernel application step actually decrease the value by spreading the value of the point to the volume of the kernel.
-#### Helper function.
+#### Helper function:
 1. make_3D_LAFM_kernel1a.m
 	Generate a kernel to be used in the main code 1.
-#### Instructions.
+#### Instructions:
 1. Run "volume_construction_essemble_v3_AqpZ.m" first, it needs the input of the structure data set from pre-processing. The parameters of the first section is the default used in the main text.
 2. The result of "volume_construction_essemble_v3_AqpZ.m" will be saved at the end of the script, the filename of which needs to be input into "force_calculation_v1.m" for the continue processing.
 3. Lastly, run "force_adjustment_v1.m", no extra input is needed. "ppvolumeF3" will be the final result of 3D-AFM averaged data.
@@ -100,7 +100,7 @@ Note: These codes are developed to process the raw data saved from 3D-AFM setup.
 	Custom script base for the panels.
 2. file_open.ipf
 	Procedure file for the scripts.
-#### Instruction and reminder:
+#### Instruction:
 1. Open IgorPro, use File/Open Experiement to open GizmoSliceViewer.pxp file.
 2. Use File/Open File/Procedure... to open file_open.ipf file, minimize or drag aside the file_open.ipf window.
 3. Click 3D Plot/Gizmo for 3d afm 2, then click OK on the popped up Function Execution Error window.
