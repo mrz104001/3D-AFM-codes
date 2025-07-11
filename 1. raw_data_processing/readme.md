@@ -10,22 +10,22 @@ Only run the main code and the main code must be run section by section!
 
 
 ## Main codes:
-1. force_curve_3D_5_channels_stepZ_for_missing_lines.m
+1. force_curve_3D_5_channels_stepZ_for_missing_lines.m<br/>
    Used for subtracting the trace scan data of 3D AFM, and calculated the corresponding force and energy curves.
-2. force_curve_3D_5_channels_stepZ_for_missing_lines_retrace
+2. force_curve_3D_5_channels_stepZ_for_missing_lines_retrace<br/>
    Used for subtracting the retrace scan data of 3D AFM, and calculated the corresponding force and energy curves.
-3. display_3D_curve_all.mlapp
+3. display_3D_curve_all.mlapp<br/>
    Used for quick examine of the 3D matrices during and after the processing.
 
 
 ## Helper functions:
-4. double_expand.m
+4. double_expand.m<br/>
 	Use double exponential to fit the amplitude and phase to larger height regions, used in force_cal_extended to calculate full range energy and force matrix.
-5. find_period_max_fun_3D_cut.m
+5. find_period_max_fun_3D_cut.m<br/>
 	Use sine wave fit to determine the x-scan period, used to help group the raw data into NxN cell variable.
-6. force_cal_extended.m
+6. force_cal_extended.m<br/>
 	Used to calculate the full range energy and force matrix, since the amplitude and phase is expanded to longer range, data longer than the length of data obtained from force_cal.m is only considered for demonstration purpose.
-7. force_cal.m
+7. force_cal.m<br/>
 	Use Holsher method to calculate energy and force matrix.
 
 
