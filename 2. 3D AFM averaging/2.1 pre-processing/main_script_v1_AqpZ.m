@@ -2,7 +2,14 @@
 %%%% output lpm data for as the input data for Particle Picker
 lpmap = -1*lpm;
 [d1, d2, d3] = size(lpmap);
-MIJ.createImage(lpmap);
+
+% optional, plot the lpmap.
+try
+    MIJ.createImage(lpmap);
+catch
+    disp('No MIJ plugin detected, optional plotting skipped.')
+end
+
 filename = "AqpZ 2D scan test 2 trace";
 energydata = E;
 heightdata = z_avg_m_corr_filled_sub;

@@ -105,7 +105,12 @@ for i = 1:d1
 end
 canvas(canvas == 0) = nan;
 canvas = fillmissing2(canvas,'linear');
-MIJ.createImage(canvas)  % note: this is vertically transformed for display!
+
+try
+    MIJ.createImage(canvas)  % note: this is vertically transformed for display!
+catch
+    disp('No MIJ plugin detected, optional plotting skipped.')
+end
 
 lpmap2 = canvas;
 %% write output file

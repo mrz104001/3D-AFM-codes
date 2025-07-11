@@ -1,5 +1,6 @@
 This folder contains all the MATLAB code to process raw data from 3D-AFM acquired data via Zurich Intrument lock-in amplifier UHFLI.
 The raw data is recorded as 4 data sets of amplitude(r), phase(phase), height(auxin1), X-scan signal(auxin2), a sample data on mica and on AqpZ could be found at the given URL: XXX.
+Only run the main code and the main code must be run section by section!
 
 ## Basic coding idea:
 1. Grouping the data into single approach and retract spectra on each x-y points of the 3D scan. The y cycles are determined via X-scan signal while the x cycles are determined by the height signal.
@@ -34,4 +35,4 @@ The raw data is recorded as 4 data sets of amplitude(r), phase(phase), height(au
 
 
 ## Raw data.
-The raw data of the 3D-AFM measurement on mica and AqpZ can be found at: https://doi.org/10.5281/zenodo.15856517. 1.1 and 2.1 can be directly input into the main codes, 1.2 and 2.2 are the processed results.
+The raw data of the 3D-AFM measurement on mica and AqpZ can be found at: https://doi.org/10.5281/zenodo.15856517. 1.1 and 2.1 can be directly input into the main codes by running the loading section in the main code, 1.2 and 2.2 are the processed results.
