@@ -109,4 +109,4 @@ Note: These codes are developed to process the raw data saved from 3D-AFM setup.
 
 
 ## Raw data
-The raw data for all the codes here are deposited here: https://doi.org/10.5281/zenodo.15856517. Please refer to the readme file in each subfolder for detailed description.
+The raw data for all the codes here are deposited here: https://doi.org/10.5281/zenodo.15866205. Please refer to the readme file in each subfolder for detailed description.

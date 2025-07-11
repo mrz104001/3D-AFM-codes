@@ -21,4 +21,4 @@ This folder contains all the IgorPro scripts to display 3D matrix saved as tif/t
 
 
 ## Raw data
-The raw data of the 3D-AFM measurement on mica and AqpZ can be found at: https://doi.org/10.5281/zenodo.15856517. 1.3 and 2.3 are the tiff file that can be displayed in the main code here. They are also the dataset displayed in Figure 1 and Figure 2.
+The raw data of the 3D-AFM measurement on mica and AqpZ can be found at: https://doi.org/10.5281/zenodo.15866205. 1.3 and 2.3 are the tiff file that can be displayed in the main code here. They are also the dataset displayed in Figure 1 and Figure 2.

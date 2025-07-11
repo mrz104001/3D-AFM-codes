@@ -23,4 +23,4 @@ This folder contains all MATLAB code to do a drift correction on the 3D-AFM meas
 
 
 ## Raw data:
-The original data can be found at: https://doi.org/10.5281/zenodo.15856517. For the main code here, the input data is "3.1 Input of 3D-AFM averaging.mat".
+The original data can be found at: https://doi.org/10.5281/zenodo.15866205. For the main code here, the input data is "3.1 Input of 3D-AFM averaging.mat".

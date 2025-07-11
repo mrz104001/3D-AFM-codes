@@ -35,4 +35,4 @@ Only run the main code and the main code must be run section by section!
 
 
 ## Raw data.
-The raw data of the 3D-AFM measurement on mica and AqpZ can be found at: https://doi.org/10.5281/zenodo.15856517. 1.1 and 2.1 can be directly input into the main codes by running the loading section in the main code, 1.2 and 2.2 are the processed results.
+The raw data of the 3D-AFM measurement on mica and AqpZ can be found at: https://doi.org/10.5281/zenodo.15866205. 1.1 and 2.1 can be directly input into the main codes by running the loading section in the main code, 1.2 and 2.2 are the processed results.

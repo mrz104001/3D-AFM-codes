@@ -16,4 +16,4 @@ This folder contains all MATLAB code for the plot of key panels in the main figu
 	
 	
 ## Raw data:
-The raw data of the 3D-AFM measurement on mica and AqpZ can be found at: https://doi.org/10.5281/zenodo.15856517. For main code 1, the input data set is 1.2. For main code 2, the input data is 2.2. For main code 3, the input data is 3.2. For main code 4, the input data could be 4.1-4.3.
+The raw data of the 3D-AFM measurement on mica and AqpZ can be found at: https://doi.org/10.5281/zenodo.15866205. For main code 1, the input data set is 1.2. For main code 2, the input data is 2.2. For main code 3, the input data is 3.2. For main code 4, the input data could be 4.1-4.3.
