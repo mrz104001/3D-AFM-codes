@@ -1,4 +1,4 @@
-This folder contains all the IgorPro scripts to display 3D matrix saved as tif/tiff file in 3D volumes. This helps plot the 3D volume demonstration in Figure 1 and Figure 2. You can also check the 3D data in other software if you don't have access to IgorPro software. Only run the main code and the main code must be run section by section.
+This folder contains all the IgorPro scripts to display 3D matrix saved as tif/tiff file in 3D volumes. This helps plot the 3D volume demonstration in Figure 1 and Figure 2. You can also check the 3D data in other software if you don't have access to IgorPro software.
 
 ## Basic coding idea:
 1. IgorPro provides a useful function called Gizmo to display 3D data as three orthogonal slices, easy to change color.
@@ -6,9 +6,9 @@ This folder contains all the IgorPro scripts to display 3D matrix saved as tif/t
 
 
 ## Main codes:
-1. GizmoSliceViewer.pxp
+1. GizmoSliceViewer.pxp<br/>
 	Custom script base for the panels.
-2. file_open.ipf
+2. file_open.ipf<br/>
 	Procedure file for the scripts.
 
 
